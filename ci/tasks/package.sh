@@ -4,7 +4,7 @@ set -e +x
 
 pushd movie-fun
   echo "Packaging JAR"
-  mvn clean install -Dmaven.test.skip=true
+  ./mvnw clean package -DskipTests
 popd
 
 jar_count=`find movie-fun/target -type f -name *.war | wc -l`

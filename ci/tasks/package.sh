@@ -16,6 +16,12 @@ fi
 
 find movie-fun/target -type f -name *.war -exec cp "{}" package-output/moviefun.war \;
 
+echo $(pwd)
+echo $(ls)
+
+cd package-output
+
+echo "After cd'ing..."
 echo $(ls)
 
 echo "Done packaging"

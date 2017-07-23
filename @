@@ -1,0 +1,22 @@
+updated changes for ci
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Ramadass <566484@AMB00677.local>
+#
+# On branch spring-boot
+# Your branch is up-to-date with 'origin/spring-boot'.
+#
+# Changes to be committed:
+#	new file:   .DS_Store
+#	new file:   ci/.DS_Store
+#	new file:   ci/pipeline.yml
+#	new file:   ci/pipeline.yml_untouched
+#	new file:   ci/tasks/package.sh
+#	new file:   ci/tasks/package.yml
+#	new file:   ci/tasks/smoke-test.sh
+#	new file:   ci/tasks/smoke-test.yml
+#	new file:   ci/tasks/test.sh
+#	new file:   ci/tasks/test.yml
+#	new file:   manifest.yml
+#

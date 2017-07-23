@@ -1,0 +1,31 @@
+---
+resources:
+- name: movie-fun
+  type: git
+  source:
+    uri: https://github.com/iamranga/apps-movie-fun-code.git
+    branch: spring-boot
+
+- name: deploy-movie-fun
+  type: cf
+  source:
+    api: https://api.system.dev.digifabricpcf.com
+    username: Rangarajan.Ramadass@cognizant.com
+    password: Peace001
+    organization: rramadass-pal
+    space: sandbox
+    skip_cert_check: true
+
+jobs:
+
+- name: deploy
+  public: true
+  plan:
+  - get: movie-fun
+    trigger: true
+  - task: package
+    file: movie-fun/ci/tasks/package.yml
+  - put: deploy-movie-fun
+    params:
+      manifest: movie-fun/manifest.yml
+      path: package-output/moviefun.jar

@@ -6,3 +6,5 @@ applications:
   random-route: true
   stack: cflinuxfs2
   path: target/moviefun.war
+  services:
+    - attendee-mysql

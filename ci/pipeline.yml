@@ -28,4 +28,4 @@ jobs:
   - put: deploy-movie-fun
     params:
       manifest: movie-fun/manifest.yml
-      path: movie-fun/target/moviefun.war
+      path: target/moviefun.war
